@@ -1,7 +1,11 @@
 let btn = document.querySelector('button')
+let resultContainer = document.querySelector('.result-paragraph')
+let resultParagraph = document.createElement('p')
+resultParagraph.classList.add('result')
+
 btn.addEventListener('click', () => {
-    let str = document.getElementById('string').value
-    
+    let str = document.getElementById('string').value    
+
     function reverseAString(str) {
         // write your solution here
     
@@ -14,14 +18,10 @@ btn.addEventListener('click', () => {
         });
         let reversedArray = newArray.reverse()
         let newStr = reversedArray.join(' ')
-        str = newStr.toString('')
-    
-        let resultContainer = document.querySelector('.result-paragraph')
-        let resultParagraph = document.createElement('p')
-        resultParagraph.classList.add('result')
-        resultParagraph.innerHTML= str
-        resultContainer.appendChild(resultParagraph)
+        str = newStr.toString('')    
         return(str)
     }
+    resultParagraph.innerHTML= `${reverseAString(str)}`
+    resultContainer.appendChild(resultParagraph)
     reverseAString(str)
 })
