@@ -1,0 +1,60 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container{
+    background-color: #d3d3d3bc;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10px;
+    padding: 10px 20px;
+}
+
+h1{
+    padding: 20px 0;
+    font-size: 25px;
+    font-family: 'Shrikhand', sans-serif;
+}
+
+.result-container, .input-container, .result-paragraph{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container label{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#string {
+    border: 0px;
+    border-radius: 15px;
+    height: 25px;
+    width: 100%;
+    font-size: 10px;
+    padding: 0 8px;
+    margin: 10px 0px;
+}
+
+button {
+    background-color: rgb(137, 192, 137);
+    border: 0px;
+    margin: 15px;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
